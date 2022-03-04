@@ -33,6 +33,51 @@ resource "google_data_loss_prevention_inspect_template" "dlp_pdf_template" {
     info_types {
       name = "FIRST_NAME"
     }
+    info_types {
+      name = "STREET_ADDRESS"
+    }
+    info_types {
+      name = "DATE_OF_BIRTH"
+    }
+    info_types {
+      name = "DATE"
+    }
+    info_types {
+      name = "TIME"
+    }
+    info_types {
+      name = "US_TOLLFREE_PHONE_NUMBER"
+    }
+    info_types {
+      name = "US_VEHICLE_IDENTIFICATION_NUMBER"
+    }
+    info_types {
+      name = "IMEI_HARDWARE_ID"
+    }
+    info_types {
+      name = "MAC_ADDRESS"
+    }
+    info_types {
+      name = "MAC_ADDRESS_LOCAL"
+    }
+    info_types {
+      name = "US_SOCIAL_SECURITY_NUMBER"
+    }
+    info_types {
+      name = "URL"
+    }
+    info_types {
+      name = "US_DRIVERS_LICENSE_NUMBER"
+    }
+    info_types {
+      name = "PASSPORT"
+    }
+    info_types {
+      name = "US_BANK_ROUTING_MICR"
+    }
+    info_types {
+      name = "US_EMPLOYER_IDENTIFICATION_NUMBER"
+    }
   }
 
   depends_on = [
